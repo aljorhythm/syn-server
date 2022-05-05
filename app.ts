@@ -8,6 +8,11 @@ function initClipRouter() {
     res.send();
   });
 
+  ClipRouter.get("/:clipId", (req, res) => {
+      res.status(200)
+      res.send()
+  })
+
   return ClipRouter;
 }
 
